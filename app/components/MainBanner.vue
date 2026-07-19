@@ -2,7 +2,7 @@
     <div class="banner-slider">
         <div class="slider">
             <div class="slides">
-                <div class="slides" :style="{transform: `translateX(-${currentSlide * 100}%)` }"  >
+                <div class="slides" :style="{transform: `translateX(-${currentSlider * 100}%)` }"  >
 
     <div class="slide"
     v-for="item in sliderItem"
@@ -12,8 +12,8 @@
         </div>
         </div>
          <div class="nav-btn">
-    <button class="prev-btn" @click="previousSlide">‹</button>
-    <button class="next-btn" @click="nextSlide">›</button>
+    <button class="prev-btn" @click="previousSlider">‹</button>
+    <button class="next-btn" @click="nextSlider">›</button>
     </div>
         </div>
     </div>
@@ -25,6 +25,7 @@
 import bannerSlide1 from '~/assets/images/banner.jpg';
 import bannerSlide2 from '~/assets/images/banner_2.jpg';
 import bannerSlide3 from '~/assets/images/banner_3.jpg';
+import { useSlider } from '~/composable/useSlider';
 const sliderItem = [
     { id: 1,
         img: bannerSlide1,
@@ -39,14 +40,7 @@ const sliderItem = [
         title: 'Третий слайд'
     }
 ]
-const currentSlide = ref(0);
-const allSlider = sliderItem.length;
-const nextSlide =()=> {
-     currentSlide.value = (currentSlide.value +1) % allSlider
-}
-const previousSlide =() => {
-    currentSlide.value = (currentSlide.value - 1 + allSlider) % allSlider
-}
+const {currentSlider, nextSlider, previousSlider} = useSlider(sliderItem)
 
 </script>
 
@@ -88,8 +82,8 @@ const previousSlide =() => {
 .nav-btn {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 12px;
+    right: 12px;
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -97,12 +91,11 @@ const previousSlide =() => {
     pointer-events: none;
 }
 .prev-btn, .next-btn {
-    /* height: 40px; */
     width: 60px;
     pointer-events: auto;
-    background: rgb(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255, 0.3);
     border: none;
-    border-radius: 40px;
+    border-radius: 20px;
     padding: 15px 20px;
     font-size: 20px;
     color: rgb(69, 83, 109);
