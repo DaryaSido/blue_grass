@@ -1,14 +1,20 @@
 body {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
-h1, h2, h3 {
-font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
+
+h1 {
+  color: #4d4a47;
+}
 a {
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }

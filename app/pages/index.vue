@@ -1,20 +1,19 @@
-<template>
-    <div class="container">
-    
-<MainBanner/>
-<h1>Отдыхай на курорте Синий луг</h1>
-<MainEntertainment/>
-<MainAppatments/>
-    </div>
-</template>
-
 <script setup lang="ts">
 
 </script>
 
+<template>
+  <div class="container">
+    <MainBanner />
+    <MainEntertainment />
+    <MainAppatments />
+  </div>
+</template>
+
 <style scoped>
 .container {
-    width: 1140px;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #d6d1ca;
 }
 </style>
