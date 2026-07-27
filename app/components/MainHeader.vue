@@ -7,18 +7,12 @@ import LogoImage from '~/assets/images/logo.svg'
     <div class="header">
       <div class="logo">
         <span>
-          <img
-            :src="LogoImage"
-            alt=""
-          >
+          <img :src="LogoImage" alt="" />
         </span>
         <span>твой лучший курорт</span>
       </div>
       <div class="contact_info">
-        <a
-          class="feedback_link"
-          href="#"
-        >Обратная связь</a>
+        <a class="feedback_link" href="#">Обратная связь</a>
         <span>8 800 770 30 30</span>
       </div>
     </div>
@@ -27,8 +21,6 @@ import LogoImage from '~/assets/images/logo.svg'
         <ul>
           <li>Курорт</li>
           <li>Чем заняться</li>
-          <li>Купить онлайн</li>
-          <li>Афиша мероприятий</li>
           <li>Проживание</li>
         </ul>
         <ul>

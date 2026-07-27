@@ -1,15 +1,16 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div class="main">
-    <MainHeader />
-    <div class="container">
-      <slot />
-    </div>
+  <div class="container">
+    <div class="main">
+      <MainHeader />
+      <!-- <div class="container"> -->
+      <div>
+        <slot />
+      </div>
 
-    <MainFooter />
+      <MainFooter />
+    </div>
   </div>
 </template>
 
@@ -20,10 +21,12 @@
   flex-direction: column;
   min-height: 100vh;
   height: 100%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 .container {
   flex: 1;
-  width: 100%;
+  /* max-width: 1900px; */
+  margin: 0 auto;
+  /* padding: 0 10px; */
 }
 </style>

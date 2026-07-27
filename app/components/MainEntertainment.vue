@@ -11,42 +11,29 @@ const entertainmentItem = [
     link: '/sport',
     image: sportImg,
   },
-  { id: 2, title: 'Развлекательные мероприятия', link: '/entertainment', image: entertainmentImg,
-  },
-  { id: 3, title: 'Пешие туры', link: '/hiking', image: hikingImg,
-  },
-  { id: 4, title: 'Спа', link: '/spa', image: spaImg,
-  },
+  { id: 2, title: 'Развлекательные мероприятия', link: '/entertainment', image: entertainmentImg },
+  { id: 3, title: 'Пешие туры', link: '/hiking', image: hikingImg },
+  { id: 4, title: 'Спа', link: '/spa', image: spaImg },
 ]
 </script>
 
 <template>
   <div class="enter_page">
-    <CommonReservationForm />
     <div class="fun">
       <h1>Отдыхайте на курорте Синий луг</h1>
       <h2>Развлечения</h2>
       <div class="fun__description">
         <div>
-          <span>Санаторий «Синий луг»</span> — это место, где отдых перестает быть скучным.
-          Мы создали идеальную среду для тех, кто ищет баланс между активным движением, культурным досугом
-          и полной релаксацией.
-          Здесь каждый найдет занятие по душе:
-          от захватывающих спортивных игр до умиротворяющих спа-процедур.
+          <span>Санаторий «Синий луг»</span> — это место, где отдых перестает быть скучным. Мы
+          создали идеальную среду для тех, кто ищет баланс между активным движением, культурным
+          досугом и полной релаксацией. Здесь каждый найдет занятие по душе: от захватывающих
+          спортивных игр до умиротворяющих спа-процедур.
         </div>
       </div>
     </div>
     <div class="cards">
-      <NuxtLink
-        v-for="item in entertainmentItem"
-        :key="item.id"
-        :to="item.link"
-        class="card"
-      >
-        <img
-          :src="item.image"
-          :alt="item.title"
-        >
+      <NuxtLink v-for="item in entertainmentItem" :key="item.id" :to="item.link" class="card">
+        <img :src="item.image" :alt="item.title" />
         <div class="card__overlay" />
         <div class="card__content">
           <span class="card__title">{{ item.title }}</span>
@@ -73,7 +60,7 @@ const entertainmentItem = [
   margin-bottom: 50px;
 
   &__description {
-    width: 1140px;
+    // width: 1140px;
     font-size: 16px;
     display: flex;
     flex-direction: column;

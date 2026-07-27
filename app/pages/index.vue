@@ -1,6 +1,4 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="container">
@@ -14,6 +12,6 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  background-color: #d6d1ca;
+  background-color: white;
 }
 </style>

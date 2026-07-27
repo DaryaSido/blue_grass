@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
+    "@pinia/nuxt": "^1.0.1",
     "@vuepic/vue-datepicker": "^14.0.0",
     "nuxt": "^4.4.2",
+    "pinia": "^4.0.2",
     "vue": "^3.5.30",
     "vue-router": "^5.0.4"
   },
