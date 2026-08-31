@@ -83,7 +83,7 @@ const showGuestCounter = ref(false)
 
 <style scoped lang="scss">
 form {
-  background-color: #eaedf2;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   border-radius: 30px;
 }

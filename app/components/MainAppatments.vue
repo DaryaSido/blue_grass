@@ -11,59 +11,6 @@
       приятного пребывания. Выберите подходящий вариант по выгодной цене и забронируйте заранее,
       чтобы быть уверенными в идеальных условиях отдыха.
     </div>
-    <!-- <div class="appartments_block">
-      <div class="appartments">
-        <h3>Аппартаменты люкс</h3>
-        <div class="appartments_button">
-          <span><a
-            class="orange-btn"
-            href="#"
-          >Забронировать</a></span> <span> <a
-            class="beige-btn"
-            href="#"
-          >Посмотреть</a></span>
-        </div>
-      </div>
-      <div class="contacts">
-        <div class="contacts_info">
-          <h3>
-            <span>Подберите отель</span>
-            <span>по выгодной цене</span>
-          </h3>
-          <a
-            class="contacts_info_chose"
-            href="#"
-          >Подобрать  <svg
-            class="arrow"
-            viewBox="0 0 27 8"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M26.3536 4.03544C26.5488 3.84017 26.5488 3.52359 26.3536 3.32833L23.1716 0.146349C22.9763 -0.0489133 22.6597 -0.0489133 22.4645 0.146349C22.2692 0.341611 22.2692 0.658194 22.4645 0.853456L25.2929 3.68188L22.4645 6.51031C22.2692 6.70557 22.2692 7.02215 22.4645 7.21742C22.6597 7.41268 22.9763 7.41268 23.1716 7.21742L26.3536 4.03544ZM4.37114e-08 4.18188L26 4.18188L26 3.18188L-4.37114e-08 3.18188L4.37114e-08 4.18188Z"
-              fill="#BF6024"
-            />
-
-          </svg> </a>
-        </div>
-        <div class="contacts_info">
-          <h3>Программа лояльности</h3>
-          <div class="contacts_info_desc">
-            Покупайте услуги курорта со скидкой до 20% и получите до 300 баллов за регистрацию!
-          </div>
-          <div class="contacts_info_btn">
-            <a
-              class="orange-btn"
-              href="#"
-            >Участвовать</a>
-            <a
-              class="contacts_info_chose"
-              href="#"
-            >Подробнее</a>
-          </div>
-        </div>
-      </div> -->
-    <!-- </div> -->
   </div>
 </template>
 
